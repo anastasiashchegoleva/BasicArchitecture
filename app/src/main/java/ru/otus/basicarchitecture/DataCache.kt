@@ -7,8 +7,6 @@ class DataCache  @Inject constructor() {
     var name: String = ""
     var surname: String = ""
     var dateOfBirth: String = ""
-    var city: String = ""
-    var country: String = ""
     var address: String = ""
     var interests: List<String> = listOf()
 }

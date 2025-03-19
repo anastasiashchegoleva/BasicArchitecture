@@ -10,8 +10,6 @@ class InfoFragmentViewModel @Inject constructor(
 
     fun getAddressInfo():String {
         val addressResult = StringBuilder()
-        if (dataCache.country != "") addressResult.append(dataCache.country).append(", ")
-        if (dataCache.city != "") addressResult.append(dataCache.city).append(", ")
         if (dataCache.address != "") addressResult.append(dataCache.address)
         return addressResult.toString()
     }

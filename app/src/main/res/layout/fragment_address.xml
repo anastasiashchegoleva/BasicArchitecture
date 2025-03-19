@@ -7,44 +7,6 @@
     tools:context=".address.AddressFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/countryInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:hint="@string/country"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/country"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/cityInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:hint="@string/city"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countryInput">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/city"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/addressInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,14 +15,15 @@
         android:layout_marginEnd="30dp"
         android:hint="@string/address"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityInput">
-        <com.google.android.material.textfield.TextInputEditText
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/address"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </com.google.android.material.textfield.TextInputEditText>
+            android:layout_height="54dp"
+            android:padding="10dp"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
